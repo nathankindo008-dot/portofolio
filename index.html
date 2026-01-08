@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Kindo - Data Scientist & Analyste Statisticien</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Nathan.Kindo</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section avec Photo Professionnelle -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="glitch" data-text="Nathan Kindo Pawentaore">KINDO Pawentaore Nathan</h1>
+                    <p class="subtitle">Elève Analyste Statisticien | Data Scientist Junior</p>
+                    <div class="hero-description">
+                        <p>Étudiant en 3ᵉ année à l'ENSEA d'Abidjan, passionné par l'analyse de données et l'intelligence artificielle. Je transforme les données en insights actionnables pour une prise de décision éclairée.</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#projets" class="btn btn-primary">
+                            <span>Découvrir mes projets</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Me contacter</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-photo-container">
+                        <div class="photo-glow"></div>
+                        <div class="photo-frame">
+                            <img src="photo.jpeg" alt="Nathan Kindo - Photo professionnelle" class="profile-photo">
+                        </div>
+                        <div class="photo-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="particles" id="particles"></div>
+    </section>
+
+    <!-- Section À Propos avec Photo Flex -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                À Propos de Moi
+            </h2>
+            
+            <div class="apropos-content">
+                <div class="apropos-text">
+                    <div class="text-block">
+                        <h3>Qui suis-je ?</h3>
+                        <p>Étudiant en Analyste Statisticien à l'ENSEA d'Abidjan, je suis passionné par l'intersection entre les statistiques, l'économétrie et l'intelligence artificielle. En tant que Président du Club de Data Science de l'ENSEA, j'encadre une équipe d'étudiants autour de projets appliqués et innovants.</p>
+                        <p>Mon parcours m'a permis de développer une expertise solide en modélisation statistique, machine learning et développement d'applications IA, notamment lors de mon stage à l'Institut National de la Statistique et de la Démographie du Burkina Faso.</p>
+                    </div>
+                    
+                    <div class="certifications">
+                        <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                        <a href="certificat/data_camp.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 0.5rem;">
+                            <div class="cert-badge" style="cursor: pointer; transition: transform 0.2s, opacity 0.2s;" onmouseover="this.style.transform='scale(1.05)'; this.style.opacity='0.9';" onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+                                <i class="fas fa-trophy"></i>
+                                <span>Lauréat Bourse DataCamp - Data Engineer (en cours)</span>
+                                <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.8em; opacity: 0.7;"></i>
+                            </div>
+                            <span style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 2rem; font-style: italic;">Cliquez pour voir le certificat</span>
+                        </a>
+                        <a href="certificat/Coursera T965E4FAC1BA.pdf" target="_blank" style="text-decoration: none; color: inherit; display: block; margin-bottom: 0.5rem;">
+                            <div class="cert-badge" style="cursor: pointer; transition: transform 0.2s, opacity 0.2s;" onmouseover="this.style.transform='scale(1.05)'; this.style.opacity='0.9';" onmouseout="this.style.transform='scale(1)'; this.style.opacity='1';">
+                                <i class="fab fa-python"></i>
+                                <span>Data Visualization with Python - IBM</span>
+                                <i class="fas fa-external-link-alt" style="margin-left: 8px; font-size: 0.8em; opacity: 0.7;"></i>
+                            </div>
+                            <span style="font-size: 0.85rem; color: var(--text-secondary); margin-left: 2rem; font-style: italic;">Cliquez pour voir le certificat</span>
+                        </a>
+                        <div style="margin-top: 1rem; padding-left: 0.5rem;">
+                            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                                <strong>Certificats DataCamp obtenus :</strong> Git, Communication avec les API, Nettoyage de données, et autres
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">9+</div>
+                            <div class="stat-label">Projets réalisés</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2026</div>
+                            <div class="stat-label">Diplôme en cours</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Passion & Engagement</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="apropos-visual">
+                    <!-- Photo Flex -->
+                    <div class="flex-photo-container">
+                        <div class="flex-photo-frame">
+                            <img src="nathan.webp" alt="Nathan Kindo - Workspace" class="flex-photo">
+                            <div class="flex-overlay">
+                                <div class="flex-badge">
+                                    <i class="fas fa-code"></i>
+                                    <span>Data Science Life</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-decoration-1"></div>
+                        <div class="flex-decoration-2"></div>
+                    </div>
+                    
+                    <!-- Activités -->
+                    <div class="interests">
+                        <h4>Centres d'intérêt</h4>
+                        <div class="interests-tags">
+                            <span class="interest-tag"><i class="fas fa-music"></i> Musique</span>
+                            <span class="interest-tag"><i class="fas fa-futbol"></i> Football</span>
+                            <span class="interest-tag"><i class="fas fa-basketball-ball"></i> Basketball</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="parcours">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                Mon Parcours
+            </h2>
+            
+            <div class="parcours-grid">
+                <!-- Formation -->
+                <div class="parcours-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation Académique</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Analyste Statisticien (AS)</h4>
+                                <p class="timeline-subtitle">ENSEA d'Abidjan</p>
+                                <p class="timeline-description">Formation en statistique, économétrie, data analysis et programmation Python/R</p>
+                                <p class="timeline-date">(en cours de validation)</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Baccalauréat Scientifique (Série C)</h4>
+                                <p class="timeline-subtitle">Complexe Scolaire Horizon International, Ouagadougou</p>
+                                <p class="timeline-description">Mention Bien</p>
+                                <p class="timeline-date">2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience Professionnelle -->
+                <div class="parcours-card">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Expérience Professionnelle</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Président - Club de Data Science</h4>
+                                <p class="timeline-subtitle">ENSEA d'Abidjan</p>
+                                <p class="timeline-description">Supervision et coordination des projets d'analyse, Encadrement d'étudiants</p>
+                                <p class="timeline-date">Depuis Août 2025</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Stagiaire en Statistique</h4>
+                                <p class="timeline-subtitle">Institut National de la Statistique et de la Démographie, Burkina Faso</p>
+                                <p class="timeline-description">Méthodes d'estimations des petits domaines sur Python, Rédaction de rapport</p>
+                                <p class="timeline-date">Août 2025 – Septembre 2025</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Chargé à la Communication</h4>
+                                <p class="timeline-subtitle">Division des Analystes Statisticiens, ENSEA</p>
+                                <p class="timeline-description">Conception de supports visuels et gestion des réseaux sociaux</p>
+                                <p class="timeline-date">Juillet 2024 – Août 2025</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Chargé à la Communication</h4>
+                                <p class="timeline-subtitle">Groupe Biblique Universitaire de l'ENSEA</p>
+                                <p class="timeline-description">Gestion de la communication et des activités du groupe</p>
+                                <p class="timeline-date">Juillet 2024 – Juillet 2025</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Agent Enquêteur</h4>
+                                <p class="timeline-subtitle">Enquête académique, ENSEA Abidjan</p>
+                                <p class="timeline-description">Collecte de données auprès des ménages</p>
+                                <p class="timeline-date">Avril 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compétences -->
+                <div class="parcours-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Compétences Techniques</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-r-project"></i>
+                            <span>R</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Stata & SPSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-map"></i>
+                            <span>QGIS</span>
+                        </div>
+                    </div>
+                    
+                    <h4 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Soft Skills</h4>
+                    <div class="soft-skills">
+                        <span class="soft-skill-tag"><i class="fas fa-users"></i> Travail en équipe</span>
+                        <span class="soft-skill-tag"><i class="fas fa-user-tie"></i> Leadership</span>
+                        <span class="soft-skill-tag"><i class="fas fa-pen"></i> Capacité rédactionnelle</span>
+                        <span class="soft-skill-tag"><i class="fas fa-palette"></i> Graphisme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                Projets Réalisés
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/jumia_scraper_analysis" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="featured-badge">Featured</div>
+                    <h3>Analyse Intelligente des Prix - Jumia Côte d'Ivoire</h3>
+                    <p class="project-description">
+                        Projet complet de web scraping et d'analyse des prix des téléphones sur Jumia. Développement d'une API avec FastAPI pour exposer les données et création d'un chatbot intelligent pour répondre aux questions sur les produits et tendances de prix.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Web Scraping</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Chatbot</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/prediction_breast_cancer" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="featured-badge">Featured</div>
+                    <h3>Modèle Deep Learning - Détection du Cancer du Sein</h3>
+                    <p class="project-description">
+                        Développement d'un réseau de neurones convolutifs (CNN) pour la détection précoce du cancer du sein à partir d'images médicales. Utilisation de techniques avancées de deep learning pour améliorer la précision du diagnostic.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">CNN</span>
+                        <span class="tag">Medical AI</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-virus"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/prediction_covid19" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="featured-badge">Featured</div>
+                    <h3>Prédiction COVID-19 - Classification Médicale</h3>
+                    <p class="project-description">
+                        Projet de classification binaire réalisé via Machine Learnia pour prédire si un patient est atteint du COVID-19 ou non. Le projet comprend une analyse exploratoire approfondie des données, des visualisations statistiques, des tests statistiques pour valider les hypothèses, le développement et l'entraînement de modèles de machine learning avec évaluation des métriques de performance, et l'optimisation des hyperparamètres pour améliorer la précision du modèle.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Classification</span>
+                        <span class="tag">Medical AI</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Visualization</span>
+                        <span class="tag">Tests Statistiques</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                    </div>
+                    <div class="featured-badge">Featured</div>
+                    <h3>Prédiction de la CAN 2025</h3>
+                    <p class="project-description">
+                        Projet collaboratif du Club de Data Science ENSEA visant à prédire les résultats de la Coupe d'Afrique des Nations 2025. Développement de modèles de machine learning basés sur les performances historiques des équipes, statistiques des joueurs et analyses prédictives pour estimer les probabilités de victoire et les parcours des équipes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Prédiction</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Team Project</span>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/ENGLISH_AI_TUTOR" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3>IA Conversationnelle pour Apprentissage d'Anglais</h3>
+                    <p class="project-description">
+                        Application d'apprentissage de l'anglais basée sur l'IA avec reconnaissance vocale (STT) et synthèse vocale (TTS). Interface interactive permettant des conversations naturelles pour améliorer les compétences linguistiques.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Speech Recognition</span>
+                        <span class="tag">Education</span>
+                    </div>
+                </div>
+
+                <!-- Projet 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                    </div>
+                    <h3>Analyse du Commerce des Services en Afrique Subsaharienne</h3>
+                    <p class="project-description">
+                        Projet académique réalisé à l'ENSEA portant sur la compilation et le traitement de données macroéconomiques relatives au commerce des services en Afrique subsaharienne. Analyse statistique approfondie et visualisation des tendances.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Économétrie</span>
+                        <span class="tag">Macroéconomie</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                </div>
+
+                <!-- Projet 7 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/determinant_pib_ci" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3>Analyse des Déterminants du PIB de la Côte d'Ivoire</h3>
+                    <p class="project-description">
+                        Analyse économétrique approfondie des facteurs influençant le PIB de la Côte d'Ivoire. Réalisé avec le langage R, ce projet comprend des visualisations statistiques avancées, des tests statistiques (tests de stationnarité, cointégration, etc.) et la modélisation des relations entre variables macroéconomiques pour identifier les principaux déterminants de la croissance économique.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">R</span>
+                        <span class="tag">Économétrie</span>
+                        <span class="tag">Macroéconomie</span>
+                        <span class="tag">Visualization</span>
+                        <span class="tag">Tests Statistiques</span>
+                    </div>
+                </div>
+
+                <!-- Projet 8 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3>Méthodes d'Estimation des Petits Domaines</h3>
+                    <p class="project-description">
+                        Projet de stage à l'Institut National de la Statistique du Burkina Faso. Implémentation en Python de méthodes statistiques avancées pour l'estimation dans les petits domaines, avec rédaction d'un rapport technique complet.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Statistics</span>
+                        <span class="tag">Small Area Estimation</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+
+                <!-- Projet 9 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/gestion_taches" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <h3>Application de Gestion des Tâches</h3>
+                    <p class="project-description">
+                        Développement d'une application de gestion des tâches avec VBA (Visual Basic for Applications) dans Excel. Interface utilisateur intuitive permettant de créer, organiser, suivre et gérer efficacement les tâches avec des fonctionnalités de priorisation, de dates d'échéance et de suivi de progression.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">VBA</span>
+                        <span class="tag">Excel</span>
+                        <span class="tag">Application</span>
+                        <span class="tag">Gestion de Projet</span>
+                    </div>
+                </div>
+
+                <!-- Projet 10 -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <a href="https://github.com/nathankindo008-dot/systeme-de-gestion-clients" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="featured-badge">Featured</div>
+                    <h3>Système de Gestion de Clients</h3>
+                    <p class="project-description">
+                        Application complète de gestion de clients développée en Python avec interface graphique. Le système permet de gérer toutes les opérations des clients, effectuer des visualisations de données, réaliser du scoring client, et inclut un processus ETL pour importer des données depuis des fichiers Excel vers une base de données SQLite. Solution intégrée pour la gestion et l'analyse de la relation client.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">Visualization</span>
+                        <span class="tag">Scoring</span>
+                        <span class="tag">Application</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                Publications & Articles
+            </h2>
+
+            <div class="projects-grid">
+                <div class="project-card" onclick="window.open('article/ecostat.pdf', '_blank')" style="cursor: pointer;">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <a href="article/ecostat.pdf" class="github-link" target="_blank" onclick="event.stopPropagation()">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <img src="article/ecostat.jpeg" alt="Article - Algorithmes de Machine Learning au Service de la Finance" style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
+                    </div>
+                    <h3>Algorithmes de Machine Learning au Service de la Finance</h3>
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Finance</span>
+                        <span class="tag">Article</span>
+                        <span class="tag">Rédaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                Contactez-moi
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Travaillons ensemble</h3>
+                    <p>Je suis ouvert à de nouvelles opportunités en Data Science, des collaborations sur des projets innovants, ou simplement échanger sur l'analyse de données et l'IA. N'hésitez pas à me contacter !</p>
+                </div>
+
+                <div class="contact-methods">
+                    <a href="mailto:nathankindo008@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>nathankindo008@gmail.com</p>
+                    </a>
+
+                    <a href="https://github.com/nathankindo008-dot" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h4>GitHub</h4>
+                        <p>@nathankindo008-dot</p>
+                    </a>
+
+                    <a href="tel:+22507072245" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Téléphone</h4>
+                        <p>+225 07 07 22 45 24</p>
+                    </a>
+
+                    <a href="https://linkedin.com/in/nathan-kindo" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p>Nathan Kindo</p>
+                    </a>
+                </div>
+
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Abidjan, Côte d'Ivoire</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 - Conçu et développé</i> par Nathan Kindo Pawentaore</p>
+            <p class="footer-subtitle">Analyste Statisticien | Data Scientist | ENSEA d'Abidjan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
