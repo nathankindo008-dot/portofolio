@@ -461,10 +461,18 @@
                 </div>
 
                 <!-- Projet 8 -->
-                <div class="project-card">
+                <div class="project-card" onclick="window.open('projets/rapport.pdf', '_blank')" style="cursor: pointer;">
                     <div class="project-header">
                         <div class="project-icon">
                             <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="https://github.com/nathankindo008-dot/estimation-petits-domaines" class="github-link" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="projets/rapport.pdf" class="github-link" target="_blank" onclick="event.stopPropagation()">
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
                         </div>
                     </div>
                     <h3>Méthodes d'Estimation des Petits Domaines</h3>
