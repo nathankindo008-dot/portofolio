@@ -65,6 +65,42 @@ body {
     padding: 1rem 2rem;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.lang-switch {
+    display: inline-flex;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    flex-shrink: 0;
+}
+
+.lang-btn {
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.4rem 0.65rem;
+    border: none;
+    background: var(--bg-white);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    color: var(--primary-color);
+    background: var(--bg-lighter);
+}
+
+.lang-btn--active {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(123, 47, 247, 0.12) 100%);
+    color: var(--primary-color);
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -1084,6 +1120,10 @@ section {
     .navbar .container {
         padding: 1rem;
         position: relative;
+    }
+
+    .nav-actions {
+        gap: 0.5rem;
     }
     
     .mobile-menu-toggle {
