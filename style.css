@@ -261,6 +261,27 @@ body {
     transform: translateY(-3px);
 }
 
+/* ==================== Dashboard Carousel ==================== */
+.dashboard-carousel {
+    position: relative;
+    width: 100%;
+    min-height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dashboard-carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    display: none;
+}
+
+.dashboard-carousel-image.is-active {
+    display: block;
+}
+
 /* ==================== Photo Professionnelle (Version Simple) ==================== */
 .hero-visual {
     display: flex;

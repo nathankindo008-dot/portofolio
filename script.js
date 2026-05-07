@@ -105,6 +105,10 @@
             'proj12.title': 'Power BI Dashboard — FIFA World Cup Analysis',
             'proj12.desc': 'Interactive Power BI dashboard for FIFA World Cup insights with KPI tracking, team comparison, trend analysis, and clear storytelling for decision-making.',
             'img.proj12': 'Power BI Dashboard — FIFA World Cup Analysis',
+            'proj13.title': 'Chocolate Sales Dashboard — Tableau',
+            'proj13.desc': 'Interactive Tableau dashboard for chocolate sales analysis with revenue tracking, product segmentation, regional trends, and actionable business insights.',
+            'img.proj13a': 'Tableau Dashboard — Chocolate Sales view 1',
+            'img.proj13b': 'Tableau Dashboard — Chocolate Sales view 2',
             'tag.econometrics': 'Econometrics',
             'tag.macroeconomics': 'Macroeconomics',
             'tag.prediction': 'Prediction',
@@ -223,6 +227,10 @@
             'proj12.title': 'Dashboard Power BI — Analyse de la Coupe du Monde',
             'proj12.desc': "Dashboard Power BI interactif pour analyser la Coupe du Monde de la FIFA avec suivi de KPI, comparaison d'équipes, analyse des tendances et data storytelling orienté décision.",
             'img.proj12': 'Dashboard Power BI — Analyse de la Coupe du Monde',
+            'proj13.title': 'Dashboard Ventes de Chocolat — Tableau',
+            'proj13.desc': "Dashboard Tableau interactif pour l'analyse des ventes de chocolat avec suivi du chiffre d'affaires, segmentation des produits, tendances regionales et insights actionnables.",
+            'img.proj13a': 'Dashboard Tableau — Ventes de Chocolat vue 1',
+            'img.proj13b': 'Dashboard Tableau — Ventes de Chocolat vue 2',
             'tag.econometrics': 'Économétrie',
             'tag.macroeconomics': 'Macroéconomie',
             'tag.prediction': 'Prédiction',
@@ -358,6 +366,21 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+        });
+
+        document.querySelectorAll('.dashboard-carousel').forEach(function (carousel) {
+            var images = carousel.querySelectorAll('.dashboard-carousel-image');
+            if (images.length <= 1) return;
+
+            var current = 0;
+            var intervalMs = parseInt(carousel.getAttribute('data-carousel-interval') || '3200', 10);
+            if (!Number.isFinite(intervalMs) || intervalMs < 1500) intervalMs = 3200;
+
+            window.setInterval(function () {
+                images[current].classList.remove('is-active');
+                current = (current + 1) % images.length;
+                images[current].classList.add('is-active');
+            }, intervalMs);
         });
     });
 })();
